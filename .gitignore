@@ -1,0 +1,9 @@
+# Ignore everything in build
+/build/**
+
+# But allow PDF files anywhere under build
+!/build/**/*.pdf
+!/build/*.pdf
+
+# Ensure Git will recurse into directories to find PDFs
+!/build/**/
