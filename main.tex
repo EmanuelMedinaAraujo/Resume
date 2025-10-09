@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in Latex
+% Author : Emanuel André Medina Araujo
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Emanuel André Medina Araujo} \\ \vspace{1pt}
+    \small +49 176 35250663 $|$ \href{mailto:medina.emanuel@proton.me}{\underline{medina.emanuel@proton.me}} $|$ 
+    \href{https://linkedin.com/in/emanuel-medina-araujo}{\underline{linkedin.com/in/emanuel-medina-araujo}} $|$ 
+    Unterschleißheim, DE
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technical University of Munich}{Munich, DE}
+      {Bachelor of Science in Computer Science, Application Area in Physics}{Oct. 2020 -- Apr. 2026}
+    \resumeSubheading
+      {Herzog-Christoph-Gymnasium}{Beilstein, DE}
+      {Abitur, Received MINT-EC certificate with distinction}{Sep. 2012 -- Sep. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Working Student Software Engineer }{Nov. 2024 -- Present}
+      {Vector Informatik GmbH - VSceneCreator (3D OPENDrive Editor)}{Munich, DE}
+      \resumeItemListStart
+        \resumeItem{Helped develop the 0.1 alpha version of VSceneCreator as a Unity application in C\#. Suggested, designed, implemented and wrote tests for core features and bugfixes in close collaboration with Product Management.}
+        \resumeItem{Introduced an read-only "Explore Mode" for users without a paid license, by creating an overview tree and a context-sensitive explore tool tip system and restricting access to features that manipulate the file.}
+        \resumeItem{Improved edit mode switching performance by restructuring the base model to enable for lazy loading for non-essential and non-visible objects resulting in up to 70\% faster switch times.}
+        \resumeItem{Optimized file loading through batched object creation and a more detailed progress bar replacing application freezes resulting in 10\% faster load times, reduced memory usage and a better User Experience.}
+      \resumeItemListEnd
+    
+      \resumeSubheading
+      {Working Student Software Developer}{Mar. 2021 -- Oct. 2024}
+      {Vector Informatik GmbH - DYNA4 (Simulation environment for virtual driving tests)}{Munich, DE}
+      \resumeItemListStart
+        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            \resumeItem{Visualized GitHub data to show collaboration}
+            \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
