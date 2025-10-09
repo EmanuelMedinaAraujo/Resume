@@ -148,57 +148,123 @@
       {Working Student Software Developer}{Mar. 2021 -- Oct. 2024}
       {Vector Informatik GmbH - DYNA4 (Simulation environment for virtual driving tests)}{Munich, DE}
       \resumeItemListStart
-        \resumeItem{Contributed to develop the full release versions of 4.0 to 9.0 of DYNA4 in addition to service packs.}
-        \resumeItem{Developed new frontend features and fixed bugs in a Java, improving UI responsiveness and stability.}
-        \resumeItem{Built internal services and automated test cases using JUnit and custom frameworks, reducing manual QA effort.}
-        \resumeItem{Refactored legacy components by large refactorings, improving maintainability and long-term scalability.}
-        \resumeItem{Enhanced CI pipeline by optimizing Jenkins integration and extending JUnit and SWTBot test coverage, resulting in faster and more reliable builds.}
-        \resumeItem{Proposed, presented, and iteratively refined feature designs with Product Management, leading to faster alignment and more user-driven development.}
-        \resumeItem{Designed and implemented a model and persistence layer for trace signals, including a custom editor, enabling better signal tracking and debugging.}
-            \resumeItem{Implemented and maintained various features and bug fixes in Java using the Eclipse RCP framework, improving user workflows in simulation configuration.}
-        \resumeItem{Redesigned the trace signal selection view for simulation configurations, resulting in a clearer UI and faster user interaction.}
-        \resumeItem{Built a new view for assigning alias names to trace signals, increasing flexibility and improving signal traceability across simulation projects.}
-        \resumeItem{Refactored dialogs for handling unreferenced and unsaved simulation artifacts, enhancing transparency and reducing configuration errors.}
-        \resumeItem{Wrote automated SWTBot UI tests for critical workflows, improving regression test coverage and reducing manual testing time.}
-        \resumeItem{Optimized the CI pipeline by extending and improving the integration of JUnit and SWTBot tests into Jenkins, reducing build failures and test flakiness.}
-        \resumeItem{Used Git and GitHub for version control and code reviews, ensuring consistent code quality and effective team collaboration.}
-        \resumeItem{Presented feature implementations to Product Management and incorporated feedback iteratively, aligning development with user needs.}
-  \resumeItemListEnd
+        \resumeItem{Developed features, fixed critical bugs, and enhanced UI using Java and Eclipse RCP, contributing to 5 major product releases (5.0 to 9.0) in direct collaboration with the Product Management.}
+        \resumeItem{Engineered a custom view to assign aliases for trace signals with a new file format, a custom persistence layer and reducing expected user knowledge with errors and warnings via built-in validation and quickfixes.}
+        \resumeItem{Enhanced usability by completely reworking the trace signal view, leading to a more modern and efficient UX.}
+        \resumeItem{Improved user workflow and simulation project integrity by developing a utility dialog to find and remove unreferenced files and by refactoring a dialog to transparently display all unsaved artifacts.}
+        \resumeItem{Reduced manual QA effort and accelerated development cycles by expanding automated test suites using SWTBot and JUnit in addition to enhancing the CI pipeline to link Jenkins results with JIRA tickets.}
+        \resumeItem{Improved codebase maintainability and enabled faster subsequent development by refactorings of legacy systems.}
+      \resumeItemListEnd
+
 
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects}
+  \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/EmanuelMedinaAraujo/ClarissaApp}{ClarissaApp}} $|$ \emph{Privacy-first personal health mobile app}}{Aug. 2024 - Present}
+        \resumeItemListStart
+          \resumeItem{Built a privacy-first mobile app with React Native (Expo) and TypeScript for menstrual cycle tracking and pill reminders using local encrypted storage.}
+          \resumeItem{Implemented core features: calendar-based cycle logging with symptom tracking, customizable local notifications for pill reminders, and theme support (dark/light/red).}
+          \resumeItem{Engineered for usability and security: offline-first storage with expo-sqlite, modular components/hooks, and a clear UX for fast daily logging.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/EmanuelMedinaAraujo/check24-comparison-challenge}{Full-Stack ISP Comparison}} $|$ \emph{Check24 Scholarship Challenge}}{May 2025 -- Jun. 2025}
+        \resumeItemListStart
+            \resumeItem{Implemented a modular full-stack (React + Vite + Tailwind frontend, Node.js/Express backend).}
+            \resumeItem{Integrated timeout/health handling and an ISP provider normalization layer to produce consistent comparisons.}
+            \resumeItem{Developed a share results feature with via a TinyURL export persisting the results within the link.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/EmanuelMedinaAraujo/ClarissaApp}{ClarissaApp}} $|$ \emph{Privacy-first personal health mobile app}}{Aug. 2024 - Present}
+        \resumeItemListStart
+          \resumeItem{Built a privacy-first mobile app with React Native (Expo) and TypeScript for menstrual cycle tracking and pill reminders using local encrypted storage.}
+          \resumeItem{Implemented core features: calendar-based cycle logging with symptom tracking, customizable local notifications for pill reminders, and theme support (dark/light/red).}
+          \resumeItem{Engineered for usability and security: offline-first storage with expo-sqlite, modular components/hooks, and a clear UX for fast daily logging.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Ironman} $|$ \emph{3.8km swim, 180km bike, 42.2km run; Overall Time : 14:21:26h}}{Oct. 2022 -- Aug. 2024}
+        \resumeItemListStart
+          \resumeItem{Completed full Ironman triathlon through disciplined training and a goal-oriented race plan, demonstrating resilience and on-the-fly problem-solving under fatigue and variable race conditions to reach the finish.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/ManuelLerchner/FreshFinder}{FreshFinder}} $|$ hackaTUM - HelloFresh Challenge}{Nov. 2023}
+        \resumeItemListStart
+          \resumeItem{Developed a React + TypeScript web app for collaborative, parallel cooking sessions with a team of 4}
+          \resumeItem{Designed a recipe dependency-graph architecture for task distribution using Supabase Realtime.}
+          \resumeItem{Integrated the OpenAI API to dynamically adapt recipes for individual preferences and amounts.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{\href{https://devpost.com/software/streamtinder}{StreamFindA}} $|$ hackaTUM - Burda Challenge}{Nov. 2022}
+        \resumeItemListStart
+          \resumeItem{Built a React front end with a Django/Python backend for swipe-based movie/series recommendations.}
+          \resumeItem{Implemented a recommendation algorithm based on pairwise choices using dwell time and negative feedback.}
+          \resumeItem{Parsed and normalized the provided multi-platform catalog to a usable format to power reliable recommendations.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Humanoid-controlled robot arm} $|$ \emph{Student Engineering Academy}}{Sep. 2018 -- Jul. 2019}
+        \resumeItemListStart
+          \resumeItem{Programmed a self-built robot arm controlled via a humanoid interface.}
+          \resumeItem{Developed a virtual movement visualization of the arm sleeve with flex sensors in Blender with Python.}
+          \resumeItem{Programmed Arduino microcontroller in C/C++ to read movement data from the arm sleeve, transmit them wirelessly via radio using the SPI protocol to the robot arm and map them to the servo motors.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{MATLAB physics visualizations} $|$ \emph{International Summer Physics Institute, University of Notre Dame}}{Jul. 2018}
+        \resumeItemListStart
+          \resumeItem{Completed Cosmic Ray Detection team project by building a detector plus analyzing and visualizing the data.}
+          \resumeItem{Visualized and analyzed CERN CMS particle-physics data using MATLAB.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Hydrogen fuel cell prototype} $|$ \emph{9th Trinational Student Congress, Strasbourg}}{Jan. 2017}
+        \resumeItemListStart
+          \resumeItem{Developed a hydrogen fuel cell concept and demonstrator with a friend and presented it in the congress.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \section{Further Highschool Experience}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Thesis} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+          {\textbf{STEM Programs and Workshops}}{2017 -- 2019}
           \resumeItemListStart
-            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+            \resumeItem{MINT-EC Workshop: Masterclass Particle Physics (Jun. 2019).}
+            \resumeItem{Fraunhofer Talent Take Off – Vernetzen (2019).}
+            \resumeItem{Regional MINT-Camp “Life on Mars” (May--Jun. 2019): Developed concepts for life-essential resources.}
+            \resumeItem{Tag der Kombinatorik — group-based local math contest (Feb. 2019).}
+            \resumeItem{Student Engineer Academy — project track (2018--2019).}
+            \resumeItem{Fraunhofer Talent School (Mar. 2018): Implemented an image classifier (cats vs. dogs).}
+            \resumeItem{Student Engineer Academy — Programming in C (2017--2018).}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Bachelor Practical Course} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          {\textbf{Early student Internships}}{2015 -- 2019}
           \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Bosch, Stuttgart-Feuerbach — voluntary engineering internship (Apr., 2019).}
+            \resumeItem{Palfinger, Ilsfeld — voluntary mechanic internship (Sep. -- Oct., 2017).}
+            \resumeItem{Getrag, Untergruppenbach — voluntary mechanic internship (Sep., 2017).}
+            \resumeItem{Vector, Stuttgart — “Mitmachen Ehrensache” social one-day placement (Dec., 2015).}
+            \resumeItem{Eberhard Schweizer Grundschule Ganztagesgruppe — social week-long placement in nursery school (Nov., 2015).}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Humanoid Robot arm} $|$ \emph{ROS, Python, OpenCV, TensorFlow}}{May 2018 -- May 2020}
-          \resumeItemListStart
-            \resumeItem{Developed a control system for a humanoid robot arm using ROS}
-          \resumeItemListEnd
+            {\textbf{Music and Community}}{2009 -- 2020}
+            \resumeItemListStart
+            \resumeItem{Leadership: Youth spokesman, Heinriet Sports Club (2016--2020); school mediator for grades 5--6 (2016--2020).}
+            \resumeItem{Awards: D2 (2017, excellent--very good); Jugend musiziert 2nd prize (2015); D1 (2014, very good); scholarship (2013) and gifted promotion (2012) in trombone.}
+            \resumeItem{Piano and trombone (advanced); District youth orchestra Heilbronn (2017--2020); Musikverein Heinriet (2014--2020); school band 1st trombone (2012--2014).}
+            \resumeItem{Theater: Castle theater productions as trombonist and actor (2017: Das kleine Gespenst; 2016: Some like it hot).}
+            \resumeItemListEnd
+
     \resumeSubHeadingListEnd
-
-
 
 %
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C\#, Java, C/C++, Python, React Native, MATLAB} \\
-     \textbf{Developer Tools}{: Git, Rider, VS Code, Unity, VIM Motions, Eclipse, PyCharm, Jenkins} \\
+     \textbf{Languages}{: C\#, Java, C/C++, Python, React, React Native, MATLAB} \\
+     \textbf{Developer Tools}{: Git, Rider, VS Code, Unity, VIM Motions, Eclipse, PyCharm, Jenkins, GitHub} \\
     }}
-    \textbf{Relevant Course Work}{: C\#, Java, C/C++, Python, React Native, MATLAB} \\
+    \textbf{Relevant Course Work}{: Experimental Physics 1, Physics Lab Course, Innovative Entrepreneurs - Leadership of High-Tech Companies, Principles of Economics, Concepts of C++ Programming, Parallel Programming, Data Structure Engineering, Discrete Probability Theory, Laboratory: Computer Organization and Computer Architecture, Functional Programming and Verification, Introduction to Theory of Computation, Advanced Seminar Course Cyber-Physical Systems, Advanced Practical Course Internet Lab - ilab2} \\
  \end{itemize}
 
 
