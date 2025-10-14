@@ -2,6 +2,11 @@
 
 This repository uses a modular LaTeX structure for easy creation of multiple resume versions.
 
+## Quick Links
+
+- [One-Page Resume](build/main_onepage.pdf)
+- [Full Resume](build/main_full.pdf)
+
 ## Structure
 
 - `sections/education.tex` — Education section
