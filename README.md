@@ -12,6 +12,8 @@ This repository uses a modular LaTeX structure for easy creation of multiple res
 - `sections/education.tex` — Education section
 - `sections/experience.tex` — Experience section
 - `sections/projects.tex` — Projects section (customize for each application)
+- `sections/experience_onepage.tex` — Shortened experience section for the one-page resume
+- `sections/projects_onepage.tex` — Shortened projects section for the one-page resume
 - `sections/skills.tex` — Technical skills
 - `sections/highschool.tex` — Further highschool experience
 - `main_full.tex` — Full resume (all sections)
