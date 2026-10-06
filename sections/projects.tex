@@ -3,11 +3,36 @@
   \resumeSubHeadingListStart
 
       \resumeProjectHeading
+        {\textbf{\href{https://github.com/EmanuelMedinaAraujo/LoveNeverDies}{LoveNeverDies}} $|$ \emph{Legal Loves Tech Hackathon -- Bavarian Ministry of Justice Challenge}}{Aug. 2026}
+        \resumeItemListStart
+          \resumeItem{Built an end-to-end encrypted estate assistant for bereaved families (React, TypeScript, Supabase) in ten days with a team of lawyers, guiding users through inheritance deadlines via a 141-node legal decision tree.}
+          \resumeItem{Designed a zero-trust architecture in which the server only stores ciphertext: hybrid post-quantum key exchange and signatures (ML-KEM + X25519, ML-DSA + Ed25519), AES-256-GCM, and a Shamir-secret-shared vault.}
+          \resumeItem{Verified row-level security with 130 Vitest files against the real Postgres migrations (PGlite/WASM) and multi-user Playwright end-to-end tests; enforced the layered architecture through ESLint rules.}
+        \resumeItemListEnd
+
+      \newpage
+
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/EmanuelMedinaAraujo/SchafPlay}{SchafPlay}} $|$ \emph{Peer-to-peer multiplayer card game (PWA)}}{Jun. 2026 -- Aug. 2026}
+        \resumeItemListStart
+          \resumeItem{Built an offline-first PWA for the Bavarian card game Schafkopf (React, TypeScript) with serverless peer-to-peer multiplayer over WebRTC data channels, using a manual SDP exchange instead of a signaling server.}
+          \resumeItem{Implemented a host-authoritative game engine with per-player state redaction, so opponents' hands never go over the wire, plus heuristic AI opponents and a trick-by-trick replay analysis.}
+          \resumeItem{Covered pairing, reconnect, and rule enforcement with a seeded Playwright end-to-end suite in GitHub Actions CI.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
         {\textbf{Autonomous AI Agent Orchestration (Hermes)} $|$ \emph{Headless Server Infrastructure \& Security}}{May 2026 -- Present}
         \resumeItemListStart
           \resumeItem{Architected and deployed a headless orchestration server on repurposed hardware running Ubuntu Server Pro, enforcing strict privacy via LUKS full-disk encryption, SSH key-based authentication, and Tailscale network isolation.}
           \resumeItem{Configured and launched the Hermes autonomous AI agent (Nous Research), leveraging its native Bitwarden Secrets Manager integration for secure, centralized credential handling.}
           \resumeItem{Engineered a real-time secure messaging gateway utilizing \texttt{signal-cli} wrapped in systemd services and D-Bus for agent notifications.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{6D Object Pose Estimation for Robotics} $|$ \emph{Robotics Seminar Paper}}{Apr. 2026 -- Jul. 2026}
+        \resumeItemListStart
+          \resumeItem{Wrote an IEEE-format survey of 6D object pose estimation, from classical geometric registration to zero-shot foundation-model methods, evaluated against generalization, real-time capability, and accuracy.}
+          \resumeItem{Showed that no current method meets all three requirements and identified hybrid architectures (slow zero-shot initialization plus fast local tracking) as the most viable direction.}
         \resumeItemListEnd
 
       \resumeProjectHeading
@@ -18,8 +43,6 @@
           \resumeItem{Engineered offline-first storage with expo-sqlite, modular components/hooks, and a clear UX for fast daily logging.}
         \resumeItemListEnd
       
-      \newpage
-
       \resumeProjectHeading
         {\textbf{\href{https://github.com/EmanuelMedinaAraujo/check24-comparison-challenge}{Full-Stack ISP Comparison}} $|$ \emph{Check24 Scholarship Challenge}}{May 2025 -- Jun. 2025}
         \resumeItemListStart
@@ -64,6 +87,8 @@
           \resumeItem{Designed a recipe dependency-graph architecture for task distribution using Supabase Realtime.}
           \resumeItem{Integrated the OpenAI API to dynamically adapt recipes for individual preferences and amounts.}
         \resumeItemListEnd
+
+      \newpage
 
     \resumeProjectHeading
         {\textbf{\href{https://devpost.com/software/streamtinder}{StreamFindA}} $|$ hackaTUM - Burda Challenge}{Nov. 2022}
