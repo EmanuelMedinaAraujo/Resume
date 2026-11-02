@@ -6,12 +6,12 @@
       {Working Student Software Engineer }{Nov. 2024 -- Present}
       {\href{https://www.vector.com/}{Vector Informatik GmbH} - VSceneCreator (3D \href{https://www.asam.net/standards/detail/opendrive/}{OPENDrive} Editor)}{Munich, DE}
       \resumeItemListStart
-        \resumeItem{Helped ship the 0.1 to 0.4 alpha versions through 43 merged pull requests, working directly with Product Management.}
-        \resumeItem{Built a polyline trajectory editing mode with OpenSCENARIO load and save (Unity/C\#): data model, controllers, inspectors, validation issues, and a lossless round-trip of optional XML attributes.}
-        \resumeItem{Designed geometry simplification for OpenDRIVE road networks: detects consecutive line and arc segments with matching heading and curvature and merges them through single or bulk fixes, with undo/redo, live validation and PlayMode tests.}
-        \resumeItem{Cut CI time for editor-only pull requests from 29.8 to 18.8 min and from 43.9 to 33.7 min on two build nodes (Jenkins) by skipping unrelated packaging, reusing module results within a run, and retrying flaky tests in place.}
-        \resumeItem{Built a read-only Explore Mode, the default without a licence: hover readout of world and road (s/t) coordinates, an overview tree of the whole network, and a 1,200-line PlayMode test suite.}
-        \resumeItem{Reduced edit-mode switching delays on large networks (about 2 min for a 40 MB file) by creating editing handles on selection instead of up front; co-developed a staged loading pipeline with global progress.}
+        \resumeItem{Helping take VSceneCreator (Unity/C\#) from its first alpha (0.1) to the stable 1.0 release (Dec. 2026), with 43 merged PRs.}
+        \resumeItem{Reduced edit-mode switch times by up to 70\% (previously about 2 min for a 40 MB file) by restructuring the editor's base model to lazy-load non-essential and non-visible objects.}
+        \resumeItem{Cut CI time for editor-only pull requests from 29.8 to 18.8 min and from 43.9 to 33.7 min on two build nodes (Jenkins) by skipping unrelated packaging, reusing module results and retrying flaky tests in place.}
+        \resumeItem{Built a polyline trajectory editing mode with load and save for OpenSCENARIO (driving-scenario standard): data model, controllers, inspectors, validation issues, and a lossless round-trip of optional XML attributes.}
+        \resumeItem{Designed and implemented geometry simplification that detects consecutive line and arc segments with matching heading and curvature in OpenDRIVE road networks and merges them through single or bulk fixes, with undo/redo and live validation.}
+        \resumeItem{Ported three native C/C++ libraries to Linux with a platform-neutral export macro and a Conan setup that installs Windows and Linux plugins, giving the Linux player its native dependencies.}
       \resumeItemListEnd
     
       \resumeSubheading
@@ -19,9 +19,9 @@
       {\href{https://www.vector.com/int/en/products/products-a-z/software/dyna4/}{Vector Informatik GmbH - DYNA4 (Simulation environment for virtual driving tests)}}{Munich, DE}
       \resumeItemListStart
         \resumeItem{Merged 218 pull requests across nine releases (6.0 to 9.1) in Java and Eclipse RCP, working directly with Product Management.}
-        \resumeItem{Engineered a new editor and file type for signal aliases and favourites, with database sync and project migration.}
-        \resumeItem{Built reference analysis so users save only the files a database sync references; co-developed warning markers and a quick fix for simulations with unsaved parameter files, removing a UI-thread deadlock risk from background jobs.}
-        \resumeItem{Authored 50+ test pull requests (SWTBot, JUnit), including reusable wrappers for an in-house form framework and a JUnit formatter that feeds CI results into test management (Xray).}
+        \resumeItem{Extended the run-package export from scenarios to tasks, refactoring the simulation runner to export instead of simulate.}
+        \resumeItem{Built reference analysis so users save only the files a database sync references; co-developed warning markers and a save quick fix for unsaved parameter files, removing a deadlock risk by no longer querying the UI from background jobs.}
+        \resumeItem{Reduced manual QA effort with 48 test-focused pull requests (SWTBot UI tests, JUnit), test code in 120 of 218 pull requests overall, and a custom JUnit formatter that links Jenkins results to Jira tickets through Xray.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
