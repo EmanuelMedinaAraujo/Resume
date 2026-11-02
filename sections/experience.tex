@@ -4,26 +4,50 @@
 
     \resumeSubheading
       {Working Student Software Engineer }{Nov. 2024 -- Present}
-      {\href{https://www.vector.com/}{Vector Informatik GmbH} - VSceneCreator (3D \href{https://www.asam.net/standards/detail/opendrive/}{OPENDrive} Editor)}{Munich, DE}
+      {\href{https://www.vector.com/}{Vector Informatik GmbH} - VSceneCreator (3D \href{https://www.asam.net/standards/detail/opendrive/}{OpenDRIVE} Editor)}{Munich, DE}
       \resumeItemListStart
-        \resumeItem{Helped ship the 0.1 to 0.4 alpha versions of the VSceneCreator (Unity/C\#) by suggesting, designing and implementing features, addressing bugs, and creating tests through close collaboration with Product Management.}
-        \resumeItem{Architected a read-only "Explore Mode" with a hierarchical overview tree and dynamic tooltip system, segregating access to editing features resulting in a preview tool for licensed users and an improved UX for free users.}
-        \resumeItem{Improved edit mode switching performance by restructuring the base model to enable lazy loading for non-essential and non-visible objects resulting in up to 70\% faster switch times.}
-        \resumeItem{Optimized file loading through batched object creation and an enhanced progress bar replacing application freezes resulting in 10\% faster loading times, reduced memory usage and a better UX.}
-        \resumeItem{Implemented support for single-sided lanes, enabling users to load OPENDrive files with single-sided lanes by automatically converting them to normal lanes resulting in prevention of broken files.}
-        \resumeItem{Streamlined developer tools by improving Unity Rider integration resulting in 10\% faster asset refresh times.}
+        \resumeItem{Helping take VSceneCreator (Unity/C\#) from its first alpha (0.1) to the stable 1.0 release (Dec. 2026), with 43 merged pull requests and features suggested, designed and implemented in close collaboration with Product Management.}
+        \resumeItem{Reduced edit-mode switch times by up to 70\% (previously about 2 min for a 40 MB file) by restructuring the editor's base model to lazy-load non-essential and non-visible objects, creating editing handles on selection instead of up front.}
+        \resumeItem{Sped up file loading by 10\% through incremental object creation, replacing application freezes with an enhanced progress bar.}
+        \resumeItem{Cut CI time for editor-only pull requests from 29.8 to 18.8 min and from 43.9 to 33.7 min on two build nodes (Jenkins) by skipping unrelated packaging, reusing module results within a run, compressing archives about 5x faster, and retrying flaky tests in place.}
+        \resumeItem{Built a polyline trajectory editing mode with load and save for OpenSCENARIO (driving-scenario standard): data model, controllers, inspectors, validation issues, and a lossless round-trip of optional XML attributes, so absent values are no longer written as 0.}
+        \resumeItem{Designed and implemented geometry simplification that reduces OpenDRIVE road-network complexity by detecting consecutive line and arc segments with matching heading and curvature and merging them through single or bulk fixes, with undo/redo, live validation and PlayMode tests.}
+        \resumeItem{Developed a read-only Explore Mode as the default for users without a licence, with a hierarchical overview tree of the whole network and a hover readout of world and road (s/t) coordinates, keeping inspection separate from editing features; covered by a 1,200-line PlayMode test suite.}
+        \resumeItem{Extended the Explore Mode readout to every edit mode through a central collider manager, and added a context menu that copies OpenSCENARIO position snippets for the hovered point.}
+        \resumeItem{Implemented support for single-sided lanes in OpenDRIVE import by automatically converting them to valid two-sided sections and correcting lane links when sections split, preventing broken files; verified with file round-trip tests.}
+        \resumeItem{Migrated the editor's geometry and road-network code across 108 files from custom double-precision vector types to Unity.Mathematics equivalents, with extension utilities and adapted tests.}
+        \resumeItem{Ported three native C/C++ libraries to Linux with a platform-neutral export macro and a Conan setup that installs Windows and Linux plugins, giving the Linux player its native dependencies.}
+        \resumeItem{Streamlined developer tools by improving the Unity Rider integration, resulting in 10\% faster asset refresh times.}
+        \resumeItem{Set up AI-assistant instruction files and documented the team's MCP configuration for coding assistants.}
+        \resumeItem{Added a development auto-save with per-session folders, 30-day cleanup and a 500 MB session cap, and made user settings persist only on change using C\# records.}
+        \resumeItem{Improved keyboard navigation with shortcuts that adapt per mode, shortcut tooltips and keyboard cycling of dropdowns; visualised the road boundary in plan view.}
+        \resumeItem{Strengthened geometry test coverage with road-mark mesh tests against reference meshes, lane-height mesh assertions with geometric helpers, and a shared geometry-element fixture.}
+        \resumeItem{Introduced automated formatting across 1,202 files, with editorconfig rules, a clean-up profile and blame-ignore revisions, and wired project git hooks into the developer setup.}
+        \resumeItem{Scoped own work by writing 67 tickets, including feature specifications, and reviewed teammates' pull requests.}
       \resumeItemListEnd
     
       \resumeSubheading
       {Working Student Software Engineer}{Mar. 2021 -- Oct. 2024}
       {\href{https://www.vector.com/int/en/products/products-a-z/software/dyna4/}{Vector Informatik GmbH - DYNA4 (Simulation environment for virtual driving tests)}}{Munich, DE}
       \resumeItemListStart
-        \resumeItem{Developed features, fixed critical bugs, and enhanced UI using Java and Eclipse RCP, contributing to 5 major product releases (5.0 to 9.0) in direct collaboration with the Product Management.}
-        \resumeItem{Engineered a custom view to assign aliases for trace signals with a new file format, a custom persistence layer and reducing expected user knowledge with errors and warnings via built-in validation and quickfixes.}
-        \resumeItem{Enhanced usability by completely reworking the trace signal view, leading to a more modern and efficient UX.}
-        \resumeItem{Improved user workflow and simulation project integrity by developing a utility dialog to find and remove unreferenced files and by refactoring a dialog to transparently display all unsaved artifacts.}
-        \resumeItem{Reduced manual QA effort and accelerated development cycles by expanding automated test suites using SWTBot and JUnit in addition to enhancing the CI pipeline to link Jenkins results with JIRA tickets.}
-        \resumeItem{Improved codebase maintainability and enabled faster subsequent development by refactorings of legacy systems.}
+        \resumeItem{Merged 218 pull requests across nine releases (6.0 to 9.1) using Java and Eclipse RCP, developing features, fixing critical bugs and enhancing the UI in direct collaboration with Product Management.}
+        \resumeItem{Engineered a custom editor and new file format for signal aliases and favourites, with a persistence layer, database sync and project migration, using built-in validation and quick fixes so users need less prior knowledge.}
+        \resumeItem{Built reference analysis so users save only the files a database sync actually references, replacing prompts for every unsaved file.}
+        \resumeItem{Co-developed warning markers and a save quick fix for simulations with unsaved parameter files, removing a deadlock risk by no longer querying the UI from background workspace jobs.}
+        \resumeItem{Unified simulation-node messages and warnings across the Problems, Tasks and Simulation views and the parameter dialog, and added problem markers with quick fixes for common project and simulation errors.}
+        \resumeItem{Extended the standalone run-package export from scenarios to tasks, refactoring the simulation runner to export instead of simulate, with SWTBot UI tests of the wizard and output structure.}
+        \resumeItem{Co-developed automatic project migration: incompatible projects are detected and closed at startup and migrated in a background job by a new migration service, with a project backup step and JUnit plugin tests.}
+        \resumeItem{Fixed internal errors when renaming the active project by replacing custom rename and delete actions with Eclipse refactoring participants.}
+        \resumeItem{Created a guided clean-up dialog that finds and removes unreferenced project files through a new file-reference service, and refactored a dialog to show all unsaved artifacts.}
+        \resumeItem{Developed OpenSCENARIO tooling (driving-scenario standard): a New File wizard (scenario, catalog, variation) creating files via EMF, rule-based icon mapping, directory-reference analysis for clean-up, and a cache-key fix for deprecated elements.}
+        \resumeItem{Evolved data models and formats: EMF parameter-model changes, XML schema generation for package descriptors, and diff-friendly project properties files for version control.}
+        \resumeItem{Reworked parameter-variation dialogs for design-of-experiments workflows, adding named values, direct editing of value arrays and multi-file selection, and surfaced varied parameters in the results.}
+        \resumeItem{Enhanced usability by reworking the trace signal view with full signal paths, an extended filter box, search across comments and tooltips, double-click signal adding, source-tree highlighting and a prominent refresh hint.}
+        \resumeItem{Added a multi-axis signal plot that groups signals by physical unit (JavaFX) and toolbar actions to plot selected data in MATLAB or the built-in view.}
+        \resumeItem{Reduced manual QA effort with 48 test-focused pull requests (SWTBot UI tests, JUnit), test code in 120 of 218 pull requests overall, and a custom JUnit formatter that links Jenkins results to Jira tickets through Xray.}
+        \resumeItem{Wrote reusable SWTBot UI-test wrappers and matchers for an in-house form framework, plus Simulation-view tests that drive MATLAB.}
+        \resumeItem{Cleared IDE problems across 861 files, removed deprecated APIs and applied save actions across 1,283 files, stopping formatting noise in later pull requests.}
+        \resumeItem{Excluded irrelevant files from unsaved-file prompts, fixed triple save requests, and automated a dependency path in the version-bump Python script.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
