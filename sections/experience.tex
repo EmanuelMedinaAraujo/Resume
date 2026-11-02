@@ -8,7 +8,7 @@
       \resumeItemListStart
         \resumeItem{Helping take VSceneCreator (Unity/C\#) from its first alpha (0.1) to the stable 1.0 release (Dec. 2026), with 43 merged pull requests and features suggested, designed and implemented in close collaboration with Product Management.}
         \resumeItem{Reduced edit-mode switch times by up to 70\% (previously about 2 min for a 40 MB file) by restructuring the editor's base model to lazy-load non-essential and non-visible objects, creating editing handles on selection instead of up front.}
-        \resumeItem{Sped up file loading by 10\% through incremental object creation, replacing application freezes with an enhanced progress bar.}
+        \resumeItem{Co-developed incremental object creation that sped up file loading by 10\%, replacing application freezes with an enhanced progress bar.}
         \resumeItem{Cut CI time for editor-only pull requests from 29.8 to 18.8 min and from 43.9 to 33.7 min on two build nodes (Jenkins) by skipping unrelated packaging, reusing module results within a run, compressing archives about 5x faster, and retrying flaky tests in place.}
         \resumeItem{Built a polyline trajectory editing mode with load and save for OpenSCENARIO (driving-scenario standard): data model, controllers, inspectors, validation issues, and a lossless round-trip of optional XML attributes, so absent values are no longer written as 0.}
         \resumeItem{Designed and implemented geometry simplification that reduces OpenDRIVE road-network complexity by detecting consecutive line and arc segments with matching heading and curvature and merging them through single or bulk fixes, with undo/redo, live validation and PlayMode tests.}
@@ -16,7 +16,7 @@
         \resumeItem{Extended the Explore Mode readout to every edit mode through a central collider manager, and added a context menu that copies OpenSCENARIO position snippets for the hovered point.}
         \resumeItem{Implemented support for single-sided lanes in OpenDRIVE import by automatically converting them to valid two-sided sections and correcting lane links when sections split, preventing broken files; verified with file round-trip tests.}
         \resumeItem{Migrated the editor's geometry and road-network code across 108 files from custom double-precision vector types to Unity.Mathematics equivalents, with extension utilities and adapted tests.}
-        \resumeItem{Ported three native C/C++ libraries to Linux with a platform-neutral export macro and a Conan setup that installs Windows and Linux plugins, giving the Linux player its native dependencies.}
+        \resumeItem{Added Linux support for three native C/C++ libraries used by the Unity Linux player: replaced Windows-only exports with a platform-neutral macro, made P/Invoke names resolve to both .dll and .so, and moved the plugins to a Conan setup that installs Windows and Linux builds.}
         \resumeItem{Streamlined developer tools by improving the Unity Rider integration, resulting in 10\% faster asset refresh times.}
         \resumeItem{Set up AI-assistant instruction files and documented the team's MCP configuration for coding assistants.}
         \resumeItem{Added a development auto-save with per-session folders, 30-day cleanup and a 500 MB session cap, and made user settings persist only on change using C\# records.}
