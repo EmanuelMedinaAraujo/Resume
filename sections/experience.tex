@@ -6,24 +6,32 @@
       {Working Student Software Engineer }{Nov. 2024 -- Present}
       {\href{https://www.vector.com/}{Vector Informatik GmbH} - VSceneCreator (3D \href{https://www.asam.net/standards/detail/opendrive/}{OPENDrive} Editor)}{Munich, DE}
       \resumeItemListStart
-        \resumeItem{Helped ship the 0.1 to 0.4 alpha versions of the VSceneCreator (Unity/C\#) by suggesting, designing and implementing features, addressing bugs, and creating tests through close collaboration with Product Management.}
-        \resumeItem{Architected a read-only "Explore Mode" with a hierarchical overview tree and dynamic tooltip system, segregating access to editing features resulting in a preview tool for licensed users and an improved UX for free users.}
-        \resumeItem{Improved edit mode switching performance by restructuring the base model to enable lazy loading for non-essential and non-visible objects resulting in up to 70\% faster switch times.}
-        \resumeItem{Optimized file loading through batched object creation and an enhanced progress bar replacing application freezes resulting in 10\% faster loading times, reduced memory usage and a better UX.}
-        \resumeItem{Implemented support for single-sided lanes, enabling users to load OPENDrive files with single-sided lanes by automatically converting them to normal lanes resulting in prevention of broken files.}
-        \resumeItem{Streamlined developer tools by improving Unity Rider integration resulting in 10\% faster asset refresh times.}
+        \resumeItem{Helped ship the 0.1 to 0.4 alpha versions of VSceneCreator (Unity/C\#) through 43 merged pull requests, suggesting, designing and implementing features in close collaboration with Product Management.}
+        \resumeItem{Built a polyline trajectory editing mode with OpenSCENARIO load and save (Unity/C\#): data model, controllers, inspectors, validation issues, and a lossless round-trip of optional XML attributes.}
+        \resumeItem{Designed geometry simplification for OpenDRIVE road networks: detects consecutive line and arc segments with matching heading and curvature and merges them through single or bulk fixes, with undo/redo, live validation and PlayMode tests.}
+        \resumeItem{Cut CI time for editor-only pull requests from 29.8 to 18.8 min and from 43.9 to 33.7 min on two build nodes (Jenkins) by skipping unrelated packaging, reusing module results within a run, and retrying flaky tests in place.}
+        \resumeItem{Built a read-only Explore Mode, the default without a licence: hover readout of world and road (s/t) coordinates, an overview tree of the whole network, and a 1,200-line PlayMode test suite; later extended the readout to every edit mode through a central collider manager.}
+        \resumeItem{Reduced edit-mode switching delays on large networks (about 2 min for a 40 MB file) by creating editing handles on selection instead of up front; co-developed a staged loading pipeline with global progress.}
+        \resumeItem{Extended OpenDRIVE import to convert single-sided lane sections into valid two-sided ones and fixed lane links when splitting sections, verified with file round-trip tests.}
+        \resumeItem{Migrated the editor's geometry and road-network code from custom vector types to Unity.Mathematics double-precision types, with extension utilities and adapted tests.}
+        \resumeItem{Ported three native C/C++ libraries to Linux with a platform-neutral export macro and a Conan setup that installs Windows and Linux plugins, so the Linux player gets its native dependencies.}
+        \resumeItem{Set up the team's Rider integration, AI-assistant instruction files and MCP configuration docs; added auto-save with size and retention limits and a keyboard-shortcut system.}
       \resumeItemListEnd
     
       \resumeSubheading
       {Working Student Software Engineer}{Mar. 2021 -- Oct. 2024}
       {\href{https://www.vector.com/int/en/products/products-a-z/software/dyna4/}{Vector Informatik GmbH - DYNA4 (Simulation environment for virtual driving tests)}}{Munich, DE}
       \resumeItemListStart
-        \resumeItem{Developed features, fixed critical bugs, and enhanced UI using Java and Eclipse RCP, contributing to 5 major product releases (5.0 to 9.0) in direct collaboration with the Product Management.}
-        \resumeItem{Engineered a custom view to assign aliases for trace signals with a new file format, a custom persistence layer and reducing expected user knowledge with errors and warnings via built-in validation and quickfixes.}
-        \resumeItem{Enhanced usability by completely reworking the trace signal view, leading to a more modern and efficient UX.}
-        \resumeItem{Improved user workflow and simulation project integrity by developing a utility dialog to find and remove unreferenced files and by refactoring a dialog to transparently display all unsaved artifacts.}
-        \resumeItem{Reduced manual QA effort and accelerated development cycles by expanding automated test suites using SWTBot and JUnit in addition to enhancing the CI pipeline to link Jenkins results with JIRA tickets.}
-        \resumeItem{Improved codebase maintainability and enabled faster subsequent development by refactorings of legacy systems.}
+        \resumeItem{Merged 218 pull requests across nine releases (6.0 to 9.1) in Java and Eclipse RCP, working directly with Product Management.}
+        \resumeItem{Engineered a new editor and file type for signal aliases and favourites: filterable tree, save/load, database sync, a service layer and a migration handler for existing projects.}
+        \resumeItem{Built reference analysis so users save only the files a database sync actually references; co-developed warning markers and a save quick fix for simulations with unsaved parameter files, and removed a deadlock risk by no longer querying the UI from background jobs.}
+        \resumeItem{Extended the standalone run-package export from scenarios to tasks, refactoring the simulation runner to export instead of simulate.}
+        \resumeItem{Co-developed automatic project migration: incompatible projects are detected and closed at startup and migrated in a background job by a new migration service, with a project backup step and JUnit plugin tests.}
+        \resumeItem{Fixed internal errors when renaming the active project by replacing custom rename and delete actions with Eclipse refactoring participants.}
+        \resumeItem{Added a guided clean-up of unreferenced project files on a new file-reference service, and a multi-axis signal plot that groups signals by physical unit (JavaFX).}
+        \resumeItem{Reworked the trace signal view, including full signal paths, search over comments and clearer guidance when no signals are available.}
+        \resumeItem{Authored 50+ test pull requests (SWTBot, JUnit), including reusable wrappers for an in-house form framework and a JUnit formatter that feeds CI results into test management (Xray).}
+        \resumeItem{Improved maintainability by clearing IDE problems across 861 files: deprecated APIs, generics and externalised strings.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
