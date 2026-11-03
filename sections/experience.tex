@@ -6,7 +6,7 @@
       {Working Student Software Engineer }{Nov. 2024 -- Present}
       {\href{https://www.vector.com/}{Vector Informatik GmbH} - VSceneCreator (3D \href{https://www.asam.net/standards/detail/opendrive/}{OpenDRIVE} Editor)}{Munich, DE}
       \resumeItemListStart
-        \resumeItem{Helping take VSceneCreator (Unity/C\#) from its first alpha (0.1) to the stable 1.0 release (Dec. 2026), with 43 merged pull requests and features suggested, designed and implemented in close collaboration with Product Management.}
+        \resumeItem{Helping take VSceneCreator (Unity/C\#) from its first alpha (0.1) to the stable 1.0 release (Dec. 2026), with features suggested, designed and implemented in close collaboration with Product Management.}
         \resumeItem{Reduced edit-mode switch times by up to 70\% (previously about 2 min for a 40 MB file) by restructuring the editor's base model to lazy-load non-essential and non-visible objects, creating editing handles on selection instead of up front.}
         \resumeItem{Co-developed incremental object creation that sped up file loading by 10\%, replacing application freezes with an enhanced progress bar.}
         \resumeItem{Cut CI time for editor-only pull requests from 29.8 to 18.8 min and from 43.9 to 33.7 min on two build nodes (Jenkins) by skipping unrelated packaging, reusing module results within a run, compressing archives about 5x faster, and retrying flaky tests in place.}
@@ -16,9 +16,9 @@
         \resumeItem{Extended the Explore Mode readout to every edit mode through a central collider manager, and added a context menu that copies OpenSCENARIO position snippets for the hovered point.}
         \resumeItem{Implemented support for single-sided lanes in OpenDRIVE import by automatically converting them to valid two-sided sections and correcting lane links when sections split, preventing broken files; verified with file round-trip tests.}
         \resumeItem{Migrated the editor's geometry and road-network code across 108 files from custom double-precision vector types to Unity.Mathematics equivalents, with extension utilities and adapted tests.}
-        \resumeItem{Brought the entire VSceneCreator application to Linux: abstracted platform-specific dialog and file-operation handling, wrote C/C++ for the licence check, made three native C/C++ libraries build and load on Linux (platform export macro instead of Windows-only dllexport, P/Invoke names resolving both .dll and .so), and set up Conan to install Windows and Linux plugins.}
+        \resumeItem{Brought the entire VSceneCreator application to Linux: abstracted platform-specific dialog and file-operation handling, wrote C/C++ for the licence check, and set up Conan to install Windows and Linux plugins.}
         \resumeItem{Streamlined developer tools by improving the Unity Rider integration, resulting in 10\% faster asset refresh times.}
-        \resumeItem{Set up AI-assistant instruction files and documented the team's MCP configuration for coding assistants.}
+        \resumeItem{Helped set up the team's AI-assistant configuration and initiated an autonomous review-agent loop.}
         \resumeItem{Added a development auto-save with per-session folders, 30-day cleanup and a 500 MB session cap, and made user settings persist only on change using C\# records.}
         \resumeItem{Improved keyboard navigation with shortcuts that adapt per mode, shortcut tooltips and keyboard cycling of dropdowns; visualised the road boundary in plan view.}
         \resumeItem{Strengthened geometry test coverage with road-mark mesh tests against reference meshes, lane-height mesh assertions with geometric helpers, and a shared geometry-element fixture.}
@@ -30,7 +30,7 @@
       {Working Student Software Engineer}{Mar. 2021 -- Oct. 2024}
       {\href{https://www.vector.com/int/en/products/products-a-z/software/dyna4/}{Vector Informatik GmbH - DYNA4 (Simulation environment for virtual driving tests)}}{Munich, DE}
       \resumeItemListStart
-        \resumeItem{Merged 218 pull requests across nine releases (6.0 to 9.1) using Java and Eclipse RCP, developing features, fixing critical bugs and enhancing the UI in direct collaboration with Product Management.}
+        \resumeItem{Developed features, fixed critical bugs and enhanced the UI across nine releases (6.0 to 9.1) in Java and Eclipse RCP, in direct collaboration with Product Management.}
         \resumeItem{Engineered a custom editor and new file format for signal aliases and favourites, with a persistence layer, database sync and project migration, using built-in validation and quick fixes so users need less prior knowledge.}
         \resumeItem{Built reference analysis so users save only the files a database sync actually references, replacing prompts for every unsaved file.}
         \resumeItem{Co-developed warning markers and a save quick fix for simulations with unsaved parameter files, removing a deadlock risk by no longer querying the UI from background workspace jobs.}
@@ -44,7 +44,7 @@
         \resumeItem{Reworked parameter-variation dialogs for design-of-experiments workflows, adding named values, direct editing of value arrays and multi-file selection, and surfaced varied parameters in the results.}
         \resumeItem{Enhanced usability by reworking the trace signal view with full signal paths, an extended filter box, search across comments and tooltips, double-click signal adding, source-tree highlighting and a prominent refresh hint.}
         \resumeItem{Added a multi-axis signal plot that groups signals by physical unit (JavaFX) and toolbar actions to plot selected data in MATLAB or the built-in view.}
-        \resumeItem{Reduced manual QA effort with 48 test-focused pull requests (SWTBot UI tests, JUnit), test code in 120 of 218 pull requests overall, and a custom JUnit formatter that links Jenkins results to Jira tickets through Xray.}
+        \resumeItem{Reduced manual QA effort with SWTBot UI tests, JUnit tests and a custom JUnit formatter that links Jenkins results to Jira tickets through Xray.}
         \resumeItem{Wrote reusable SWTBot UI-test wrappers and matchers for an in-house form framework, plus Simulation-view tests that drive MATLAB.}
         \resumeItem{Cleared IDE problems across 861 files, removed deprecated APIs and applied save actions across 1,283 files, stopping formatting noise in later pull requests.}
         \resumeItem{Excluded irrelevant files from unsaved-file prompts, fixed triple save requests, and automated a dependency path in the version-bump Python script.}
